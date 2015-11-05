@@ -1,4 +1,8 @@
 .blog
-	width: 100%
+	+outer-container(100%)
 
-	column
+	.item
+		+span-columns(1 of 2 table)
+		img
+			+fill-parent
+			overflow: hidden
