@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row blog">
 
 	{% for post in site.posts %}
 	  <!-- <li>
@@ -11,7 +11,7 @@
 
 
 		<div class="one-half column">
-			<img src="//placecage.com/1000/400" class="u-max-full-width" alt="">
+			<img src="{{ post.image }}" class="u-max-full-width" alt="">
 		</div>
 	{% endfor %}
 </div>
