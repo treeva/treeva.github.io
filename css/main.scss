@@ -38,16 +38,18 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+	@media screen and (max-width: $device) {
+		@content;
+	}
 }
 
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+		"2-basic/base",
+		"2-basic/layout",
+		"2-basic/syntax-highlighting",
+		"1-tools/normalize.css",
+		"1-tools/skeleton/skeleton"
 ;
