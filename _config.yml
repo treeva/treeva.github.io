@@ -16,6 +16,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://treeva.co" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 # github_username:  Treeva
+disqus_thread: treeva
 
 # Build settings
 # markdown: kramdown

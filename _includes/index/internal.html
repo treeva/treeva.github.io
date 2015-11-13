@@ -1,14 +1,12 @@
-<div class="container">
-	<div class="row">
-		<div class="eight columns">
-			{% for project in site.projects %}
-			<img src="{{ project.image }}" alt="">
-			{% endfor %}
-		</div>
-		<div class="four columns">
-			{% for project in site.projects %}
-			<p>{{ project.content }}</p>
-			{% endfor %}
-		</div>
-	</div>
-</div>
+<section class="internal">
+	<article>
+		{% for project in site.projects %}
+		<img src="{{ project.image }}" alt="">
+		{% endfor %}
+	</article>
+	<aside>
+		{% for project in site.projects %}
+		<p>{{ project.content }}</p>
+		{% endfor %}
+	</aside>
+</section>

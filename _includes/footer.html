@@ -1,7 +1,9 @@
-<footer>
-	<ul>
-		<li>Blog</li>
-		<li>Project</li>
-		<li>Open Source</li>
-	</ul>
+<footer class="navbar container">
+  <ul class="navbar-list">
+	{% for my_page in site.pages %}
+	  {% if my_page.title %}
+		<li class="navbar-item"><a class="navbar-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+	  {% endif %}
+	{% endfor %}
+  </ul>
 </footer>
